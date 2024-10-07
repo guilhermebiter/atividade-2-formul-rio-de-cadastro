@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro de Pet</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro do pet</h1>
+        <form>
+            <label for="nome">Nome do pet:</label>
+            <input type="text" id="nome" required>
+
+            <label>Espécie:</label>
+            <label><input type="radio" name="especie" value="cão" required>Cão</label>
+            <label><input type="radio" name="especie" value="gato">Gato</label>
+            <label><input type="radio" name="especie" value="outro">Outro</label>
+
+            <label for="raca">Raça:</label>
+            <input type="text" id="raca">
+
+            <label for="idade">Idade (anos):</label>
+            <input type="number" id="idade" required>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" required>
+
+            <label>Sexo:</label>
+            <label><input type="radio" name="sexo" value="macho" required>Macho</label>
+            <label><input type="radio" name="sexo" value="fêmea">Fêmea</label>
+
+            <label for="cor">Cor:</label>
+            <input type="text" id="cor">
+
+            <label for="vacina">Data de Vacinação:</label>
+            <input type="date" id="vacina">
+
+            <label for="tutor">Nome do Tutor:</label>
+            <input type="text" id="tutor" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" placeholder="Rua" required>
+            <input type="number" placeholder="Número" required>
+            <input type="text" placeholder="Bairro" required>
+            <input type="text" placeholder="Cidade" required>
+            <input type="text" placeholder="Estado" required>
+
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes"></textarea>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
